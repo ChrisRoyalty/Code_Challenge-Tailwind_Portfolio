@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Day23: Portfolio</title>
+  </head>
+  <body class="font-sans bg-gray-100">
+    <!-- Header Section with Logo Animation -->
+    <header class="bg-blue-800 py-6 text-white text-center">
+      <img
+        src="images/chris001.png"
+        alt="Profile Picture"
+        class="w-16 h-16 rounded-full mx-auto mb-4 bg-black"
+      />
+      <h1 class="text-4xl font-extrabold">Chibuike Christian</h1>
+      <p class="text-xl">Web Developer & Designer</p>
+    </header>
+
+    <!-- Navigation Menu with Hover Effects -->
+    <nav class="bg-gray-800 text-white py-4">
+      <ul class="flex justify-center space-x-6">
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- About Section with Transformations -->
+    <section id="about" class="py-12 text-center">
+      <h2 class="text-3xl font-semibold">About Me</h2>
+      <p class="mt-4 text-gray-700">
+        I'm a passionate web developer and designer, dedicated to creating
+        beautiful and functional web experiences.
+      </p>
+    </section>
+
+    <!-- Portfolio Section with Image Filters -->
+    <section id="portfolio" class="py-12 bg-white">
+      <h2 class="text-3xl font-semibold text-center">Portfolio</h2>
+      <div class="w-full flex justify-center">
+        <div
+          class="w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8"
+        >
+          <!-- Project with Hover Transformation -->
+          <div class="group transform hover:scale-105 transition-transform">
+            <img
+              src="images/fashion002.png"
+              alt="Project 1"
+              class="w-full rounded-lg shadow-lg"
+            />
+          </div>
+          <!-- Project with Hover Transformation -->
+          <div class="group transform hover:scale-105 transition-transform">
+            <img
+              src="images/mobile003.webp"
+              alt="Project 2"
+              class="w-full rounded-lg shadow-lg"
+            />
+          </div>
+          <!-- Project with Hover Transformation -->
+          <div class="group transform hover:scale-105 transition-transform">
+            <img
+              src="images/phonemain.jpg"
+              alt="Project 3"
+              class="w-full rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section with Interactive Form -->
+    <section id="contact" class="py-12 text-center">
+      <h2 class="text-3xl font-semibold">Contact Me</h2>
+      <form action="#" class="mt-8 max-sm:w-[85%] w-[70%] mx-auto">
+        <!-- Form Inputs with Validation -->
+        <div class="mb-4">
+          <label for="name" class="block text-left text-gray-700 font-semibold"
+            >Name:</label
+          >
+          <input
+            type="text"
+            id="name"
+            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-left text-gray-700 font-semibold"
+            >Email:</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            for="message"
+            class="block text-left text-gray-700 font-semibold"
+            >Message:</label
+          >
+          <textarea
+            id="message"
+            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <!-- Submit Button with Hover Effect -->
+        <button
+          type="submit"
+          class="bg-blue-500 text-white py-3 px-6 hover:bg-blue-600 transition-colors rounded-full"
+        >
+          Send
+        </button>
+      </form>
+    </section>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
